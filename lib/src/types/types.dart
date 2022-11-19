@@ -30,6 +30,7 @@ class RequestType {
   static const RequestType image = RequestType(_imageValue);
   static const RequestType video = RequestType(_videoValue);
   static const RequestType audio = RequestType(_audioValue);
+  static const RequestType pitch = RequestType(_videoValue | _audioValue);
 
   bool containsImage() => value & _imageValue == _imageValue;
 
